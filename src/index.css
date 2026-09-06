@@ -1,0 +1,21 @@
+/* Reset global para que la página ocupe todo el ancho y alto sin márgenes molestos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Forzamos a que el html, el body y el root de React abarquen el 100% de la pantalla */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212; /* Fondo oscuro elegante estilo reproductor de música */
+  color: #ffffff;            /* Texto blanco por defecto */
+}
+
+/* Opcional: Estilo general para contenedores si usas Bootstrap */
+body {
+  display: flex;
+  flex-direction: column;
+}
